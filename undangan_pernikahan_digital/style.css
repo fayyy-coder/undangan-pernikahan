@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #34483c;
+  background-color: #f8f5ee;
+}
+
+.halaman-pembuka {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(30, 54, 42, 0.55),
+        rgba(30, 54, 42, 0.55)
+    ), url("foto1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #fffaf0;
+    padding: 2rem 0;
+}
+
+.teks-kecil { font-family: Arial, sans-serif; font-size: .8rem; letter-spacing: 3px; margin-bottom: 1rem; }
+.nama-utama { font-size: clamp(2.5rem, 8vw, 5rem); margin: 1rem 0; color: #fff4d8; }
+.nama-utama span, .nama-hero span { color: #c7a66a; font-style: italic; }
+.tanggal-pembuka { font-size: 1.1rem; margin-bottom: 2rem; }
+.nama-tamu { font-weight: bold; font-size: 1.2rem; }
+.tombol-utama { background-color: #b18a50; color: white; border: 1px solid #b18a50; padding: .8rem 1.5rem; border-radius: 30px; }
+.tombol-utama:hover { background-color: #8d6a3b; color: white; }
+.navbar-undangan { background-color: #fffdf7; border-bottom: 1px solid #e4dccb; }
+.navbar-brand, .nav-link { color: #405b49; }
+.navbar-brand { font-weight: bold; }
+.nav-link:hover { color: #b18a50; }
+
+
+
+/* Membuat tulisan pada halaman Beranda lebih jelas */
+.bagian-hero {
+    color: #fffdf7;
+    background:
+        linear-gradient(
+            rgba(30, 54, 42, 0.45),
+            rgba(30, 54, 42, 0.45)
+        ),
+        url("foto2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Warna judul dan tulisan pada halaman Beranda */
+.bagian-hero .judul-bagian,
+.bagian-hero .nama-hero,
+.bagian-hero .deskripsi,
+.bagian-hero .tanggal-hero,
+.bagian-hero .teks-kecil {
+    color: #fffdf7;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Warna khusus tanda & pada nama mempelai */
+.bagian-hero .nama-hero span {
+    color: #e6c27a;
+}
+
+
+
+.judul-bagian { font-size: clamp(2rem, 5vw, 3rem); color: #405b49; margin-bottom: 1rem; }
+.deskripsi { max-width: 42rem; line-height: 1.8; margin: 0 auto; }
+.nama-hero { font-size: clamp(1.8rem, 5vw, 3rem); margin-top: 2rem; }
+.tanggal-hero { letter-spacing: 1px; }
+.bagian { padding: 5rem 0; }
+.bagian-terang { background-color: #fffdf7; }
+.bagian-hijau { background-color: #e8eee5; }
+.kartu-mempelai { height: 100%; padding: 2rem; border: 1px solid #d9dfd3; border-radius: 12px; background-color: #f8f5ee; box-shadow: 0 5px 15px rgba(42,59,45,.08); }
+.inisial { width: 5rem; height: 5rem; margin: 0 auto 1.5rem; border-radius: 50%; background-color: #405b49; color: #fffaf0; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+.kartu-mempelai h3, .kartu-acara h3, .lokasi h3 { color: #405b49; margin-bottom: 1rem; }
+.kartu-mempelai p, .kartu-acara p, .lokasi p { line-height: 1.7; }
+.kartu-acara { height: 100%; padding: 2rem; background-color: #fffdf7; border-radius: 12px; border: 1px solid #d9dfd3; }
+.tombol-peta { color: #405b49; border: 1px solid #405b49; border-radius: 25px; padding: .6rem 1.2rem; }
+.tombol-peta:hover { background-color: #405b49; color: white; }
+.pesan-hadir { color: #405b49; font-weight: bold; }
+.footer { padding: 2rem 1rem; background-color: #304638; color: #fffaf0; }
+.footer p { margin: .4rem 0; }
+.tombol-musik { position: fixed; right: 18px; bottom: 18px; z-index: 1000; background-color: #405b49; color: white; border: 1px solid #fffdf7; border-radius: 25px; padding: .7rem 1rem; box-shadow: 0 3px 10px rgba(0,0,0,.2); }
+@media (max-width: 576px) {
+  .bagian { padding: 3.5rem 0; }
+  .bagian-hero { min-height: 65vh; }
+  .kartu-mempelai, .kartu-acara { padding: 1.5rem; }
+}
+
+/* Galeri foto prewedding */
+.foto-prewedding {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #fffdf7;
+    box-shadow: 0 5px 15px rgba(42, 59, 45, 0.15);
+    transition: transform 0.3s;
+}
+
+.foto-prewedding:hover {
+    transform: scale(1.03);
+}
